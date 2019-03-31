@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Common", "DesignPatterns.Common\DesignPatterns.Common.csproj", "{BC25FD46-65AE-4AD3-913B-24757FEC5B2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Decorator", "DesignPatterns.Decorator\DesignPatterns.Decorator.csproj", "{86B25458-A8FD-41E0-B187-14C2D2900E58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Strategy", "DesignPatterns.Strategy\DesignPatterns.Strategy.csproj", "{0A37846A-ADF7-4255-A5D1-3DCF45F33538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.AbstractFabric", "DesignPatterns.AbstractFabric\DesignPatterns.AbstractFabric.csproj", "{A0FC8D14-A9FC-46DD-82FA-F64B31AB1111}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Singleton", "DesignPatterns.Singleton\DesignPatterns.Singleton.csproj", "{8E681238-AA28-46FE-A68B-ACEB77547D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Tests", "DesignPatterns.Tests\DesignPatterns.Tests.csproj", "{F4B9D541-0858-4F1D-86C0-4DA8F24265C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Proxy", "DesignPattern.Proxy\DesignPattern.Proxy.csproj", "{4B257C5F-19F9-43D2-BC79-1BF21168B92F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC25FD46-65AE-4AD3-913B-24757FEC5B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC25FD46-65AE-4AD3-913B-24757FEC5B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC25FD46-65AE-4AD3-913B-24757FEC5B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC25FD46-65AE-4AD3-913B-24757FEC5B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B25458-A8FD-41E0-B187-14C2D2900E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B25458-A8FD-41E0-B187-14C2D2900E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B25458-A8FD-41E0-B187-14C2D2900E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B25458-A8FD-41E0-B187-14C2D2900E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A37846A-ADF7-4255-A5D1-3DCF45F33538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A37846A-ADF7-4255-A5D1-3DCF45F33538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A37846A-ADF7-4255-A5D1-3DCF45F33538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A37846A-ADF7-4255-A5D1-3DCF45F33538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0FC8D14-A9FC-46DD-82FA-F64B31AB1111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FC8D14-A9FC-46DD-82FA-F64B31AB1111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FC8D14-A9FC-46DD-82FA-F64B31AB1111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FC8D14-A9FC-46DD-82FA-F64B31AB1111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E681238-AA28-46FE-A68B-ACEB77547D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E681238-AA28-46FE-A68B-ACEB77547D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E681238-AA28-46FE-A68B-ACEB77547D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E681238-AA28-46FE-A68B-ACEB77547D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B9D541-0858-4F1D-86C0-4DA8F24265C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B9D541-0858-4F1D-86C0-4DA8F24265C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B9D541-0858-4F1D-86C0-4DA8F24265C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B9D541-0858-4F1D-86C0-4DA8F24265C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B257C5F-19F9-43D2-BC79-1BF21168B92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B257C5F-19F9-43D2-BC79-1BF21168B92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B257C5F-19F9-43D2-BC79-1BF21168B92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B257C5F-19F9-43D2-BC79-1BF21168B92F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
