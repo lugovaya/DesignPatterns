@@ -25,6 +25,7 @@ namespace DesignPatterns.Tests
             sortList.Sort();
             
             // Assert
+            Assert.Equal(0, sortList.Count);
         }
         
         [Fact]
