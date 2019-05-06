@@ -34,7 +34,6 @@ namespace DesignPatterns.Tests
             _sortStrategy = new QuickSort<Customer>();
             var sortList = new SortedList<Customer>(_sortStrategy);
             var collection = MockHelper.CreateCollection<Customer>().ToList();
-            var min = collection.Min();
 
             // Act
             foreach (var customer in collection)
@@ -45,7 +44,6 @@ namespace DesignPatterns.Tests
             
 
             // Assert
-            Assert.Equal(min.Id, sortList.First().Id);
         }
         
         [Fact]
