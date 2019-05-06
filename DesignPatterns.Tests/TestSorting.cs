@@ -1,3 +1,4 @@
+using System.Linq;
 using DesignPatterns.Common.Models;
 using DesignPatterns.Strategy;
 using DesignPatterns.Strategy.Strategies;
@@ -32,9 +33,11 @@ namespace DesignPatterns.Tests
             // Arrange
             _sortStrategy = new QuickSort<Customer>();
             var sortList = new SortedList<Customer>(_sortStrategy);
+            var collection = MockHelper.CreateCollection<Customer>().ToList();
+            var min = collection.Min();
 
             // Act
-            foreach (var customer in MockHelper.CreateCollection<Customer>())
+            foreach (var customer in collection)
             {
                 sortList.Add(customer);
             }
@@ -42,6 +45,7 @@ namespace DesignPatterns.Tests
             
 
             // Assert
+            Assert.Equal(min.Id, sortList.First().Id);
         }
         
         [Fact]
