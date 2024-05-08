@@ -29,7 +29,8 @@ namespace DesignPattern.Proxy
         {
             object proxy = Create<T, DynamicProxy<T>>();
 
-            ((DynamicProxy<T>) proxy).SetParameters(decorated, beforeExecute, onSuccessExecute, onFailedExecute);
+            ((DynamicProxy<T>) proxy)
+                .SetParameters(decorated, beforeExecute, onSuccessExecute, onFailedExecute);
             
             return (T)proxy;
         }

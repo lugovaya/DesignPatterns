@@ -10,13 +10,13 @@ namespace DesignPatterns.Strategy
     {
         private readonly IList<T> _collection;
         private readonly ISortStrategy<T> _sortStrategy;
- 
+
         public SortedList(ISortStrategy<T> sortStrategy)
         {
             _collection = new List<T>();
             _sortStrategy = sortStrategy;
         }
- 
+
         public void Add(T entity)
         {
             _collection.Add(entity);
@@ -38,7 +38,7 @@ namespace DesignPatterns.Strategy
         }
 
         public int Count => _collection.Count;
-        
+
         public bool IsReadOnly => _collection.IsReadOnly;
 
         public IEnumerator<T> GetEnumerator()

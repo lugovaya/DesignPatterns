@@ -12,10 +12,10 @@ namespace DesignPatterns.Tests
         {
             // Arrange
             bool result;
-            var balancersSequence = MockHelper.CreateSequence<LoadBalancer>(5);
+            var balancersSequence = MockHelper.CreateSequence(() => LoadBalancer.Instance, 5);
 
             // Act
-            result = balancersSequence.Any(x => x == balancersSequence[0]);
+            result = balancersSequence.All(x => x == balancersSequence[0]);
 
             // Assert
             Assert.True(result);

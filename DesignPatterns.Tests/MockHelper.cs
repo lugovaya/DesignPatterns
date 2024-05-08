@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Moq;
 
@@ -17,11 +18,16 @@ namespace DesignPatterns.Tests
 
         public static IList<T> CreateSequence<T>(int size) where T : class
         {
-            var array = new T[size];
+            return CreateSequence(() => new Mock<T>().Object, size);
+        }
 
-            for (var i = 0; i < size; i++)
+        public static IList<T> CreateSequence<T>(Func<T> createInstance, int count) where T : class
+        {
+            var array = new T[count];
+
+            for (var i = 0; i < count; i++)
             {
-                array[i] = new Mock<T>().Object;
+                array[i] = createInstance();
             }
 
             return array;

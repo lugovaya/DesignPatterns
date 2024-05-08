@@ -12,8 +12,9 @@ namespace DesignPatterns.Decorator
         {
         }
     }
-    
-    public class LoggerRepository<T, TKey> : IRepository<T, TKey> where T : BaseEntity<TKey> // represents "Decorator"
+
+    // represents "Decorator"
+    public class LoggerRepository<T, TKey> : IRepository<T, TKey> where T : BaseEntity<TKey> 
     {
         private readonly IRepository<T, TKey> _decorated;
 
